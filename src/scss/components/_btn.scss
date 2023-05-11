@@ -1,9 +1,18 @@
 .btn {
-  display: inline-block;
-  background: var(--accent-color);
-  border-radius: 5px;
+  display: block;
   font-weight: 600;
-  font-size: 13px;
-  color: var(--light-color);
-  padding: 18px 19px;
+  min-width: 130px;
+  font-size: 14px;
+  line-height: 118%;
+  padding: 17px 25px;
+
+  &--fill {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+  }
+
+  &:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+  }
 }
