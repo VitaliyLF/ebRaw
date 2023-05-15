@@ -1,15 +1,26 @@
 .btn {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 0;
   font-weight: 600;
-  min-width: 130px;
+  max-width: 130px;
+  width: 100%;
   font-size: 14px;
-  line-height: 118%;
-  padding: 17px 25px;
   text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &--fill {
     background-color: var(--accent-color);
     color: var(--light-color);
+  }
+
+  &--light {
+    padding: 16px 0;
+    font-weight: 400;
+    color: var(--black-color);
+    border: 1px solid #666666;
+    text-transform: initial;
   }
 
   &:focus {

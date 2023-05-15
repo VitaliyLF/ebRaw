@@ -93,12 +93,12 @@
   }
 
   &__btn {
-    font-size: 13px;
-    padding-top: 15px;
-    padding-bottom: 14px;
-    padding-left: 38px;
-    padding-right: 8px;
+    max-width: 140px;
+    padding: 15px 0;
+    padding-left: 40px;
+    padding-right: 7px;
     border-radius: 5px;
+    font-size: 13px;
     background-image: url(../img/avatar.png);
     background-repeat: no-repeat;
     background-size: 25px 25px;
