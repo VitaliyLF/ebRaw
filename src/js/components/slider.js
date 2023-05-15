@@ -1,16 +1,13 @@
 import Swiper, {
   Navigation,
   Pagination,
-  Autoplay,
   EffectFade
 } from 'swiper';
 
 
-Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
-
+Swiper.use([Navigation, Pagination, EffectFade]);
 
 const heroSlider = document.querySelector('.hero__slider')
-
 
 if (heroSlider) {
   const heroSliderSwiper = new Swiper(heroSlider, {
@@ -24,10 +21,6 @@ if (heroSlider) {
       el: '.hero__pag',
       type: 'bullets',
       clickable: true,
-    },
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
     },
     effect: 'fade',
     fadeEffect: {
