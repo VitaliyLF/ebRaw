@@ -31,7 +31,7 @@
       grid-column: 8 span;
       flex-direction: row;
       align-items: center;
-      background-image: url(../img/shop-item-1.png);
+      background-image: url(../img/shop-item-1.jpg);
       background-size: auto;
       background-position: left top 10px;
 
@@ -48,17 +48,17 @@
     }
 
     &--bags {
-      background-image: url(../img/shop-item-2.png);
+      background-image: url(../img/shop-item-2.jpg);
     }
 
     &--mackup {
-      background-image: url(../img/shop-item-3.png);
+      background-image: url(../img/shop-item-3.jpg);
     }
 
     &--watch {
       grid-row: 1 / 2 span;
       grid-column: -5 / 4 span;
-      background-image: url(../img/shop-item-4.png);
+      background-image: url(../img/shop-item-4.jpg);
       background-size: auto;
       background-position: center top 0px;
     }
