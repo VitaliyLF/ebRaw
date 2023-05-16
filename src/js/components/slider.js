@@ -1,13 +1,15 @@
 import Swiper, {
   Navigation,
   Pagination,
-  EffectFade
+  EffectFade,
+  Autoplay
 } from 'swiper';
 
 
-Swiper.use([Navigation, Pagination, EffectFade]);
+Swiper.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 const heroSlider = document.querySelector('.hero__slider')
+const ProductSlider = document.querySelector('.product__slider')
 
 if (heroSlider) {
   const heroSliderSwiper = new Swiper(heroSlider, {
@@ -25,6 +27,21 @@ if (heroSlider) {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
-    }
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+}
+
+if (ProductSlider) {
+  const ProductSliderSwiper = new Swiper(ProductSlider, {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.product__next',
+      prevEl: '.product__prev',
+    },
   });
 }
