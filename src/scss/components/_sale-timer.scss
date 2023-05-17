@@ -1,0 +1,79 @@
+.sale-timer {
+  max-width: 470px;
+  width: 100%;
+  min-height: 550px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 115px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 23px 30px;
+    max-width: 330px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 134.5%;
+    text-align: center;
+    color: var(--light-color);
+    border: 3px solid var(--light-color);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: auto;
+  }
+
+  &__value {
+    margin-bottom: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 70px;
+    border: 2px solid var(--light-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 134.5%;
+    color: var(--light-color);
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 134.5%;
+    text-align: center;
+    color: var(--light-color);
+  }
+
+  &__btn {
+    padding: 14px 0;
+    color: var(--light-color);
+    text-transform: initial;
+    border: 3px solid #dddddd;
+    transition: border 0.1s ease, color 0.1s ease;
+
+    svg {
+      margin-left: 5px;
+      margin-bottom: 1px;
+      width: 16px;
+      height: 16px;
+      object-fit: cover;
+      fill: var(--light-color);
+    }
+  }
+
+  .sale-timer__btn.clicked {
+    border: 3px solid var(--active-color);
+    color: var(--active-color);
+
+    svg {
+      fill: currentColor;
+    }
+  }
+}

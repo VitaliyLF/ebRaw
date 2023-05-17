@@ -10,6 +10,7 @@ Swiper.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 const heroSlider = document.querySelector('.hero__slider')
 const ProductSlider = document.querySelector('.product__slider')
+const SaleSlider = document.querySelector('.sale__slider')
 
 if (heroSlider) {
   const heroSliderSwiper = new Swiper(heroSlider, {
@@ -42,6 +43,16 @@ if (ProductSlider) {
     navigation: {
       nextEl: '.product__next',
       prevEl: '.product__prev',
+    },
+  });
+}
+
+if (SaleSlider) {
+  const SaleSliderSwiper = new Swiper(SaleSlider, {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.sale__next',
+      prevEl: '.sale__prev',
     },
   });
 }
