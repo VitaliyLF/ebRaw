@@ -1,5 +1,6 @@
 .product {
   padding-top: 90px;
+  padding-bottom: 131px;
   background-color: var(--light-color);
 
   &__descr {
@@ -7,19 +8,41 @@
     margin-bottom: 60px;
   }
 
-  &__slider-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -40px;
-    margin-bottom: 40px;
+  // &__slider-nav {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   margin-top: -40px;
+  //   margin-bottom: 40px;
 
-    button {
-      @include mr(20px);
-    }
+  //   button {
+  //     @include mr(20px);
+  //   }
+  // }
+
+  &__prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+
+  &__next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 100;
   }
 
   .swiper {
-    padding: 30px 20px;
-    margin: -30px -20px;
+    padding: 100px 20px;
+    margin: -100px -20px;
+    padding-top: 30px;
+    margin-top: -30px;
+  }
+
+  .swiper-slide {
+    height: auto !important;
   }
 }
