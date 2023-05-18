@@ -1,0 +1,37 @@
+.sale-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 470px;
+  background-color: var(--light-color);
+
+  &__image {
+    margin-bottom: 28px;
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    max-width: 313px;
+    margin: 0;
+    margin-bottom: 11px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 134.5%;
+    text-align: center;
+    color: var(--black-color);
+  }
+
+  &__price {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--black-color);
+  }
+}
