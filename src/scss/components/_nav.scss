@@ -73,15 +73,14 @@
   }
 
   &__value {
+    @include flex-all-center;
+
     position: absolute;
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
     width: 13px;
     height: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
     font-size: 8px;
     line-height: 12px;

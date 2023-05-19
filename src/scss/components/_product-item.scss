@@ -12,6 +12,8 @@
 
   &--sale {
     &::after {
+      @include flex-all-center;
+
       content: "sale";
       position: absolute;
       top: 11px;
@@ -24,9 +26,6 @@
       line-height: 14px;
       color: var(--accent-color);
       text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 
@@ -46,10 +45,10 @@
     font-size: 18px;
     line-height: 134.5%;
     color: var(--black-color);
-    text-align: center;
   }
 
   &__price {
+    margin-top: auto;
     display: block;
     font-weight: 500;
     font-size: 18px;
@@ -108,13 +107,14 @@
   }
 
   &__nav-btn {
+    @include flex-all-center;
+
     padding: 6px 0;
     border: 1px solid var(--accent-color);
     background-color: var(--light-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: background-color 0.3s ease, fill 0.3s ease;
+
+    @include mb(15px);
 
     svg {
       width: 16px;
@@ -122,8 +122,6 @@
       object-fit: cover;
       fill: var(--accent-color);
     }
-
-    @include mb(15px);
 
     @include hover {
       background-color: var(--accent-color);
