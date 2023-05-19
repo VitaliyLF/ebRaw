@@ -3,30 +3,14 @@
   background-color: var(--light-color);
   min-height: 650px;
 
-  &__slider {
-    margin: 0 -78px;
-    padding: 0 78px;
-    padding-bottom: 40px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__content {
-    max-width: 470px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
+  &__container {
+    position: relative;
   }
 
   &__prev {
     position: absolute;
     top: 50%;
-    left: 6px;
+    left: 10px;
     transform: translateY(-50%);
     background-color: var(--color-light);
     z-index: 10;
@@ -35,10 +19,28 @@
   &__next {
     position: absolute;
     top: 50%;
-    right: 6px;
+    right: 10px;
     transform: translateY(-50%);
     background-color: var(--color-light);
     z-index: 10;
+  }
+
+  &__slider {
+    margin: 0 -78px;
+    padding: 0 78px;
+    padding-bottom: 40px;
+  }
+
+  .swiper-slide {
+    @include flex-all-sb;
+  }
+
+  &__content {
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
   }
 
   &__trends {
@@ -80,13 +82,13 @@
   }
 
   .swiper-pagination-bullet {
+    @include mr(15px);
+
     border: 1px solid var(--black-color);
     width: 10px;
     height: 10px;
     background-color: var(--light-color);
     opacity: 1;
-
-    @include mr(15px);
   }
 
   .swiper-pagination-bullet-active {
@@ -96,6 +98,8 @@
     height: 14px;
 
     &::before {
+      @include flex-all-center;
+
       content: "";
       position: absolute;
       top: 50%;
@@ -105,9 +109,6 @@
       height: 8px;
       background-color: var(--black-color);
       border-radius: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 }

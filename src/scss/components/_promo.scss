@@ -13,6 +13,8 @@
   }
 
   &::after {
+    @include flex-all-center;
+
     content: "";
     position: absolute;
     top: -20px;
@@ -26,9 +28,6 @@
     background-repeat: no-repeat;
     background-size: 13px 17px;
     background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   &__content {

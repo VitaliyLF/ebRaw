@@ -7,7 +7,6 @@
   }
 
   &__item {
-    padding: 18px 23px 30px;
     grid-column: 4 span;
     display: flex;
     flex-direction: column;
@@ -28,12 +27,10 @@
     }
 
     &--promo {
-      padding-right: 40px;
       grid-column: 8 span;
       flex-direction: row;
       align-items: center;
-      background-image: url(../img/shop-item-1.jpg);
-      background-size: auto;
+      background-size: 410px 342px;
       background-position: left 15px top 10px;
 
       .btn {
@@ -48,28 +45,34 @@
       }
 
       .shop__content {
-        padding-top: 30px;
+        padding: 50px 40px 30px;
       }
-    }
-
-    &--bags {
-      background-image: url(../img/shop-item-2.jpg);
-    }
-
-    &--mackup {
-      background-image: url(../img/shop-item-3.jpg);
     }
 
     &--watch {
       grid-row: 1 / 2 span;
-      grid-column: -5 / 4 span;
-      background-image: url(../img/shop-item-4.jpg);
-      background-size: auto;
-      background-position: center top 0px;
+      grid-column: 9 / 4 span;
+      background-size: 370px 534px;
+      background-position: center top;
+
+      .shop__content {
+        padding-bottom: 45px;
+      }
+
+      .shop__sale {
+        margin-bottom: 8px;
+      }
+
+      .shop__subtitle {
+        margin-bottom: 14px;
+        font-size: 24px;
+        line-height: 35px;
+      }
     }
   }
 
   &__content {
+    padding: 18px 23px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +89,7 @@
   &__subtitle {
     max-width: 400px;
     margin: 0;
-    margin-bottom: auto;
+    margin-bottom: 7px;
     font-weight: 600;
     font-size: 30px;
     line-height: 43px;
@@ -95,7 +98,6 @@
   }
 
   &__link {
-    margin-top: 7px;
     padding: 14px 0;
     max-width: 110px;
   }
