@@ -49,6 +49,17 @@ if (productSlider) {
   });
 }
 
+if (saleSlider) {
+  const productSliderSwiper = new Swiper(saleSlider, {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.sale__next',
+      prevEl: '.sale__prev',
+    },
+  });
+}
+
+
 if (parthersSlider) {
   const partherSliderSwiper = new Swiper(parthersSlider, {
     slidesPerView: 6,
