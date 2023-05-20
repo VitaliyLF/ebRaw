@@ -1,6 +1,6 @@
 .shop {
   padding-top: 80px;
-  background-color: #f5f5f5;
+  background-color: var(--wildsand-color);
 
   &__list {
     grid-template-rows: repeat(2, 350px);

@@ -12,6 +12,7 @@ const heroSlider = document.querySelector('.hero__slider')
 const productSlider = document.querySelector('.product__slider')
 const saleSlider = document.querySelector('.sale__slider')
 const parthersSlider = document.querySelector('.parthers__slider')
+const reviewsSlider = document.querySelector('.reviews__slider')
 
 if (heroSlider) {
   const heroSliderSwiper = new Swiper(heroSlider, {
@@ -56,6 +57,22 @@ if (parthersSlider) {
     navigation: {
       nextEl: '.parthers__next',
       prevEl: '.parthers__prev',
+    },
+  });
+}
+
+if (reviewsSlider) {
+  const reviewsSliderSwiper = new Swiper(reviewsSlider, {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.reviews__next',
+      prevEl: '.reviews__prev',
+    },
+    pagination: {
+      el: '.reviews__pag',
+      type: 'bullets',
+      clickable: true,
     },
   });
 }
