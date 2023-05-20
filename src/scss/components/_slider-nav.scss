@@ -33,6 +33,24 @@
     &:active {
       background-color: var(--active-color);
     }
+
+    &--light {
+      border: 2px solid var(--light-color);
+      color: var(--light-color);
+
+      svg {
+        color: inherit;
+        fill: currentColor;
+      }
+
+      @include hover {
+        background-color: var(--light-color);
+
+        svg {
+          fill: var(--dovegray-color);
+        }
+      }
+    }
   }
 }
 

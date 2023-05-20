@@ -1,0 +1,19 @@
+.blog {
+  background-color: var(--wildsand-color);
+
+  &__title {
+    margin-bottom: 17px;
+  }
+
+  &__descr {
+    margin-bottom: 46px;
+  }
+
+  &__item {
+    grid-column: 6 span;
+  }
+
+  .blog-post {
+    height: 100%;
+  }
+}
