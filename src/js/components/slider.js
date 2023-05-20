@@ -9,8 +9,9 @@ import Swiper, {
 Swiper.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 const heroSlider = document.querySelector('.hero__slider')
-const ProductSlider = document.querySelector('.product__slider')
-const SaleSlider = document.querySelector('.sale__slider')
+const productSlider = document.querySelector('.product__slider')
+const saleSlider = document.querySelector('.sale__slider')
+const parthersSlider = document.querySelector('.parthers__slider')
 
 if (heroSlider) {
   const heroSliderSwiper = new Swiper(heroSlider, {
@@ -36,8 +37,8 @@ if (heroSlider) {
   });
 }
 
-if (ProductSlider) {
-  const ProductSliderSwiper = new Swiper(ProductSlider, {
+if (productSlider) {
+  const productSliderSwiper = new Swiper(productSlider, {
     slidesPerView: 4,
     spaceBetween: 30,
     navigation: {
@@ -47,12 +48,14 @@ if (ProductSlider) {
   });
 }
 
-if (SaleSlider) {
-  const SaleSliderSwiper = new Swiper(SaleSlider, {
-    slidesPerView: 1,
+if (parthersSlider) {
+  const partherSliderSwiper = new Swiper(parthersSlider, {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: true,
     navigation: {
-      nextEl: '.sale__next',
-      prevEl: '.sale__prev',
+      nextEl: '.parthers__next',
+      prevEl: '.parthers__prev',
     },
   });
 }

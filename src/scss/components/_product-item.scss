@@ -47,6 +47,10 @@
     color: var(--black-color);
   }
 
+  &__link {
+    color: currentColor;
+  }
+
   &__price {
     margin-top: auto;
     display: block;

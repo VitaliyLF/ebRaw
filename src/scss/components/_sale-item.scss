@@ -28,6 +28,10 @@
     color: var(--black-color);
   }
 
+  &__link {
+    color: currentColor;
+  }
+
   &__price {
     margin-bottom: 20px;
     font-weight: 500;
