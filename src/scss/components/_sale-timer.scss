@@ -71,11 +71,15 @@
       object-fit: cover;
       fill: var(--light-color);
     }
+
+    &:focus {
+      outline: 2px solid var(--light-color);
+    }
   }
 
   .sale-timer__btn.clicked {
-    border: 3px solid var(--active-color);
-    color: var(--active-color);
+    border: 3px solid var(--dove-gray-color);
+    color: var(--dove-gray-color);
 
     svg {
       fill: currentColor;

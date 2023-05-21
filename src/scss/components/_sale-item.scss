@@ -5,9 +5,15 @@
   max-width: 470px;
   background-color: var(--light-color);
 
+  &__wrapper {
+    &:focus {
+      outline: 2px solid var(--accent-color);
+    }
+  }
+
   &__image {
-    margin-top: 20px;
-    margin-bottom: 28px;
+    padding-top: 20px;
+    padding-bottom: 28px;
   }
 
   &__content {
@@ -30,6 +36,20 @@
 
   &__link {
     color: currentColor;
+    transition: color 0.3s ease;
+
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 4px;
+    }
+
+    @include hover {
+      color: var(--alizarin-crimson-color);
+    }
+
+    &:active {
+      color: var(--dove-gray-color);
+    }
   }
 
   &__price {

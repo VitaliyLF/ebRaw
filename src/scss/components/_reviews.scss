@@ -29,6 +29,11 @@
     left: 130px;
     transform: translateY(-50%);
     z-index: 10;
+
+    &:focus {
+      outline: 2px solid var(--light-color);
+      outline-offset: 4px;
+    }
   }
 
   &__next {
@@ -37,6 +42,15 @@
     right: 130px;
     transform: translateY(-50%);
     z-index: 10;
+
+    &:focus {
+      outline: 2px solid var(--light-color);
+      outline-offset: 4px;
+    }
+
+    &:active {
+      background-color: var(--alizarin-crimson-color);
+    }
   }
 
   &__title {
