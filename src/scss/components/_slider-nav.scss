@@ -6,6 +6,7 @@
     width: 40px;
     height: 40px;
     border: 2px solid var(--accent-color);
+    background-color: var(--light-color);
     color: var(--accent-color);
 
     svg {
@@ -36,6 +37,7 @@
 
     &--light {
       border: 2px solid var(--light-color);
+      background-color: transparent;
       color: var(--light-color);
 
       svg {

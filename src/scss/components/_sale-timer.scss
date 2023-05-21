@@ -23,10 +23,14 @@
   }
 
   &__content {
+    @include flex-all-sb;
+
+    flex-wrap: wrap;
     margin-bottom: 43px;
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
+  }
+
+  &__item {
+    @include mr(15px);
   }
 
   &__value {
