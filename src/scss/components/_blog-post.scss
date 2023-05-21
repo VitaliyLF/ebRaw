@@ -1,9 +1,38 @@
 .blog-post {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid #e9e9e9;
   background-color: var(--wildsand-color);
   transition: background-color 0.3s ease;
+
+  &--sale {
+    &::after {
+      content: "Sale";
+      position: absolute;
+      top: 11px;
+      left: 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--light-color);
+      text-transform: initial;
+    }
+  }
+
+  &--fashion {
+    &::after {
+      content: "Fashion";
+      position: absolute;
+      top: 11px;
+      left: 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--light-color);
+      text-transform: initial;
+    }
+  }
 
   &__image {
     transition: filter 0.3s ease;
@@ -36,6 +65,20 @@
   &__name {
     text-decoration: underline;
     color: currentColor;
+    transition: color 0.3s ease;
+
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 4px;
+    }
+
+    @include hover {
+      color: var(--alizarin-crimson-color);
+    }
+
+    &:active {
+      color: var(--dove-gray-color);
+    }
   }
 
   &__descr {
@@ -44,13 +87,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: var(--dovegray-color);
+    color: var(--dove-gray-color);
   }
 
   &__link {
     margin-top: auto;
     background-color: transparent;
-    color: var(--dovegray-color);
+    color: var(--dove-gray-color);
   }
 
   @include hover {

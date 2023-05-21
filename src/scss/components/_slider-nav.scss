@@ -32,7 +32,7 @@
     }
 
     &:active {
-      background-color: var(--active-color);
+      background-color: var(--dove-gray-color);
     }
 
     &--light {
@@ -49,7 +49,7 @@
         background-color: var(--light-color);
 
         svg {
-          fill: var(--dovegray-color);
+          fill: var(--dove-gray-color);
         }
       }
     }

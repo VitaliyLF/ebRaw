@@ -13,11 +13,12 @@
       height: 100%;
       object-fit: cover;
       fill: var(--accent-color);
+      transition: fill 0.3s ease;
     }
 
     &.star__item--active {
       svg {
-        fill: var(--active-color);
+        fill: var(--alizarin-crimson-color);
       }
     }
   }
