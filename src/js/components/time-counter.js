@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const NewTimer = new Date('Jun 17 2023 00:00:00')
+  const NewTimer = new Date('Sep 17 2023 00:00:00')
 
   const dayValue = document.querySelector('.sale-timer__day .sale-timer__value')
   const hrsValue = document.querySelector('.sale-timer__hrs .sale-timer__value')

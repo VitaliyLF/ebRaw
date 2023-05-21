@@ -85,5 +85,9 @@ if (reviewsSlider) {
       type: 'bullets',
       clickable: true,
     },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
   });
 }

@@ -1,14 +1,13 @@
 import ClipboardJS from 'clipboard';
 
-const CopyButton = document.querySelector('.sale-timer__btn');
+const copyButton = document.querySelector('.sale-timer__btn');
 
-const clipboard = new ClipboardJS(CopyButton);
+const clipboard = new ClipboardJS(copyButton);
 
+copyButton.addEventListener('click', () => {
+  copyButton.classList.add('clicked');
 
-CopyButton.addEventListener('click', function () {
-  CopyButton.classList.add('clicked')
-
-  setTimeout(function () {
-    CopyButton.classList.remove('clicked');
+  setTimeout(() => {
+    copyButton.classList.remove('clicked');
   }, 1000);
-})
+});

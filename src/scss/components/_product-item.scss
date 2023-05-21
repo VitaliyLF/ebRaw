@@ -99,7 +99,7 @@
     }
   }
 
-  &__btns {
+  &__nav {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -110,7 +110,7 @@
     transition: opacity 0.3s ease;
   }
 
-  &__nav-btn {
+  &__nav-action {
     @include flex-all-center;
 
     padding: 6px 0;
@@ -152,7 +152,7 @@
       visibility: visible;
     }
 
-    .product-item__btns {
+    .product-item__nav {
       opacity: 1;
     }
   }
