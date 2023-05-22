@@ -1,7 +1,7 @@
 .star {
   display: flex;
 
-  &__item {
+  &__btn {
     @include mr(10px);
 
     width: 20px;
@@ -16,7 +16,7 @@
       transition: fill 0.3s ease;
     }
 
-    &.star__item--active {
+    &.star__btn--active {
       svg {
         fill: var(--alizarin-crimson-color);
       }

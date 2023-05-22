@@ -40,6 +40,12 @@
   &__form {
     position: relative;
     grid-column: 3 span;
+
+    .just-validate-error-label {
+      position: absolute;
+      bottom: 0px;
+      color: var(--accent-color) !important;
+    }
   }
 
   .footer__form-title {
@@ -139,7 +145,6 @@
 }
 
 .form-field {
-  display: flex;
   width: 270px;
 
   &__input {
@@ -154,7 +159,7 @@
     border: 1px solid var(--black-color);
 
     &::placeholder {
-      color: var(--silver-color);
+      color: var(--dove-gray-color);
     }
 
     &:focus {

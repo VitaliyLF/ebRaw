@@ -118,7 +118,7 @@
     "description": "Snippet for simple html svg images"
   },
   "tooltip": {
-  "prefix": "g-tooltip",
+    "prefix": "g-tooltip",
     "body": [
       "<span class=\"tooltip\">",
       "  <button class=\"tooltip__btn\" aria-describedby=\"$1\">$2</button>",
@@ -147,5 +147,17 @@
       "</div>"
     ],
     "description": "Snippet for basic tabs structure"
+  },
+  "image": {
+    "prefix": "g-image",
+    "body": [
+      "<picture>",
+      "  <source media=\"(min-width: 576px)\" srcset=\"$1_2x.webp 2x\" type=\"image/webp\">",
+      "  <source media=\"(max-width: 575px)\" srcset=\"$1.webp\" type=\"image/webp\">",
+      "  <source srcset=\"$1.webp\" type=\"image/webp\">",
+      "  <img loading=\"lazy\" src=\"$1.$2\" srcset=\"$1__2x.jpg 2x\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+      "</picture>"
+    ],
+    "description": "Snippet for basic logo structure"
   }
 }

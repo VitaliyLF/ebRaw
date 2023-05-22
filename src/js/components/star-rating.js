@@ -2,7 +2,7 @@ const starContainers = document.querySelectorAll('.star');
 let selectedRatings = [];
 
 starContainers.forEach((container) => {
-  const starItems = container.querySelectorAll('.star__item');
+  const starItems = container.querySelectorAll('.star__btn');
   let selectedRating = 0;
   const selectedRatingAttr = container.getAttribute('data-selected-rating');
 
@@ -27,11 +27,11 @@ starContainers.forEach((container) => {
 });
 
 function highlightStars(starItems, index) {
-  starItems.forEach((star, i) => star.classList.toggle('star__item--active', i <= index));
+  starItems.forEach((star, i) => star.classList.toggle('star__btn--active', i <= index));
 }
 
 function resetStars(starItems) {
-  starItems.forEach((star) => star.classList.remove('star__item--active'));
+  starItems.forEach((star) => star.classList.remove('star__btn--active'));
 }
 
 function setRating(container, value) {
