@@ -1,0 +1,28 @@
+.cookie-block {
+  display: none;
+  padding: 20px 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background-color: var(--dove-gray-color);
+  color: var(--light-color);
+
+  &__wrapper {
+    @include flex-all-sb;
+  }
+
+  &__descr {
+    margin: 0;
+  }
+
+  &__link {
+    color: var(--accent-color);
+
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 4px;
+    }
+  }
+}

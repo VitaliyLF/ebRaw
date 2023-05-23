@@ -38,12 +38,14 @@
   }
 
   &__form {
-    position: relative;
     grid-column: 3 span;
+  }
+
+  &__form-wrapper {
+    position: relative;
 
     .just-validate-error-label {
-      position: absolute;
-      bottom: 0px;
+      padding-top: 10px;
       color: var(--accent-color) !important;
     }
   }
@@ -171,7 +173,7 @@
 
 .footer__form-btn {
   position: absolute;
-  bottom: 35px;
+  top: 10px;
   right: 10px;
   width: 40px;
   height: 40px;
