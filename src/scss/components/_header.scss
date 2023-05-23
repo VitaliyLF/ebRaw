@@ -11,3 +11,9 @@
     @include flex-all-sb;
   }
 }
+
+.logo {
+  @include tablet {
+    max-width: 100px;
+  }
+}
