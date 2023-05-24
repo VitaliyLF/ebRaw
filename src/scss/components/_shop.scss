@@ -6,25 +6,41 @@
     grid-template-rows: repeat(2, 350px);
 
     @include minidesk {
-      grid-template-rows: repeat(4, 350px);
-    }
-
-    @include small-tablet {
       grid-template-rows: initial;
     }
   }
 
   &__item {
+    padding: 19px 10px 30px;
     height: 100%;
+    overflow: hidden;
     grid-column: 4 span;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background-repeat: no-repeat;
-    background-size: 174px 170px;
-    background-position: center top 18px;
+    align-items: center;
     background-color: var(--light-color);
     transition: box-shadow 0.3s ease;
+
+    &--promo {
+      padding: 22px 0 0;
+      grid-column: 8 span;
+      flex-direction: row;
+      align-items: center;
+
+      @include minidesk {
+        padding: 19px 10px 30px;
+      }
+    }
+
+    &--watch {
+      padding: 0 0 30px;
+      grid-row: 1 / 2 span;
+      grid-column: 9 / 4 span;
+
+      @include minidesk {
+        padding: 0;
+      }
+    }
 
     @include hover {
       box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.2);
@@ -36,53 +52,35 @@
     }
 
     @include minidesk {
-      grid-column: 12 span;
+      grid-column: 6 span;
+      grid-row: auto;
+      flex-direction: row;
+      align-items: center;
     }
 
     @include small-tablet {
-      display: block;
       grid-column: 12 span;
-      background-image: none !important;
     }
 
-    &--promo {
-      grid-column: 8 span;
-      flex-direction: row;
-      align-items: center;
-      background-size: 410px 342px;
-      background-position: left 15px top 10px;
+    @include mobile {
+      padding: 19px 10px 30px;
+    }
+  }
 
-      @include minidesk {
-        grid-column: 12 span;
-      }
+  &__image {
+    margin-bottom: 10px;
 
-      @include small-tablet {
-        grid-column: 12 span;
-      }
+    @include minidesk {
+      margin-bottom: 0;
     }
 
-    &--watch {
-      grid-row: 1 / 2 span;
-      grid-column: 9 / 4 span;
-      background-size: 370px 534px;
-      background-position: center top;
-
-      @include minidesk {
-        grid-column: 12 span;
-        grid-row: 4 / 6 span;
-        flex-direction: row;
-        align-items: center;
-        background-position: left top 10px;
-      }
-
-      @include small-tablet {
-        grid-column: 12 span;
-      }
+    @include mobile {
+      display: none;
     }
   }
 
   &__content {
-    padding: 18px 23px 30px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,6 +107,7 @@
   }
 
   &__link {
+    margin-top: auto;
     padding: 14px 0;
     max-width: 110px;
   }
@@ -118,6 +117,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
+    text-align: center;
     color: var(--black-color);
+
+    @include mobile {
+      margin-bottom: 7px;
+    }
   }
 }
