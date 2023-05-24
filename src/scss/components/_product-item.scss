@@ -47,24 +47,6 @@
     color: var(--black-color);
   }
 
-  &__link {
-    color: currentColor;
-    transition: color 0.3s ease;
-
-    &:focus {
-      outline: 2px solid var(--accent-color);
-      outline-offset: 4px;
-    }
-
-    @include hover {
-      color: var(--alizarin-crimson-color);
-    }
-
-    &:active {
-      color: var(--dove-gray-color);
-    }
-  }
-
   &__price {
     margin-top: auto;
     display: block;
