@@ -61,6 +61,29 @@
     }
   }
 
+  &__btn {
+    border: 2px solid var(--light-color);
+    background-color: transparent;
+    color: var(--light-color);
+
+    svg {
+      color: inherit;
+      fill: currentColor;
+    }
+
+    @include hover {
+      background-color: var(--light-color);
+
+      svg {
+        fill: var(--dove-gray-color);
+      }
+    }
+
+    &:active {
+      background-color: var(--alizarin-crimson-color);
+    }
+  }
+
   &__title {
     margin-bottom: 17px;
     color: var(--light-color);
