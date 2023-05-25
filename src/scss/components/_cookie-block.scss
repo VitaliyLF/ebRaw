@@ -8,17 +8,22 @@
   z-index: 200;
   background-color: var(--accent-color);
   color: var(--light-color);
+  z-index: 1000;
 
   &__wrapper {
     @include flex-all-sb;
+
+    flex-wrap: wrap;
   }
 
   &__descr {
     margin: 0;
+    margin-bottom: 20px;
   }
 
   &__link {
-    color: var(--alizarin-crimson-color);
+    color: currentColor;
+    text-decoration: underline;
 
     &:focus {
       outline: 2px solid var(--accent-color);
