@@ -6,7 +6,7 @@
   right: 0;
   bottom: 0;
   z-index: 200;
-  background-color: var(--dove-gray-color);
+  background-color: var(--accent-color);
   color: var(--light-color);
 
   &__wrapper {
@@ -18,7 +18,7 @@
   }
 
   &__link {
-    color: var(--accent-color);
+    color: var(--alizarin-crimson-color);
 
     &:focus {
       outline: 2px solid var(--accent-color);
