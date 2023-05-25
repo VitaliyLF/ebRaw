@@ -40,12 +40,24 @@ if (heroSlider) {
 
 if (productSlider) {
   const productSliderSwiper = new Swiper(productSlider, {
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 0,
     navigation: {
       nextEl: '.product__next',
       prevEl: '.product__prev',
     },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    }
   });
 }
 
@@ -56,19 +68,40 @@ if (saleSlider) {
       nextEl: '.sale__next',
       prevEl: '.sale__prev',
     },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+        autoplay: false,
+      },
+    }
   });
 }
 
 
 if (parthersSlider) {
   const partherSliderSwiper = new Swiper(parthersSlider, {
-    slidesPerView: 6,
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     navigation: {
       nextEl: '.parthers__next',
       prevEl: '.parthers__prev',
     },
+    breakpoints: {
+      576: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 6,
+      },
+    }
   });
 }
 

@@ -12,6 +12,19 @@
 
   &__content {
     grid-column: 3 span;
+
+    @include tablet {
+      grid-column: 1 / 5 span;
+      grid-row: 1;
+    }
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 6 span;
+    }
   }
 
   .footer__descr {
@@ -35,10 +48,28 @@
 
   &__nav {
     grid-column: 6 span;
+
+    @include tablet {
+      grid-column: 12 span;
+    }
   }
 
   &__form {
     grid-column: 3 span;
+
+    @include tablet {
+      grid-column: 6 / 7 span;
+      grid-row: 1;
+    }
+
+    @include small-tablet {
+      grid-column: 12 span;
+      grid-row: 3;
+    }
+
+    @include mobile {
+      grid-column: 6 span;
+    }
   }
 
   &__form-wrapper {
@@ -61,6 +92,10 @@
   &__bottom {
     margin-top: 110px;
     background-color: var(--wildsand-color);
+
+    @include mobile {
+      margin-top: 50px;
+    }
   }
 }
 
@@ -116,8 +151,16 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 30px;
 
+  @include mobile {
+    grid-column: 6 span;
+  }
+
   &__col {
     grid-column: 2 span;
+
+    @include mobile {
+      grid-column: 3 span;
+    }
   }
 
   .footer-nav__title {
@@ -192,9 +235,14 @@
 .copy {
   @include flex-all-sb;
 
+  @include small-tablet {
+    flex-direction: column;
+  }
+
   padding: 30px 0;
 
   &__descr {
+    text-align: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 160.5%;

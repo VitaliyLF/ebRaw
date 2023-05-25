@@ -4,16 +4,16 @@
   align-items: center;
   max-width: 470px;
   background-color: var(--light-color);
+  padding: 21px 20px 65px;
+
+  @include minidesk {
+    max-width: 100%;
+  }
 
   &__wrapper {
     &:focus {
       outline: 2px solid var(--accent-color);
     }
-  }
-
-  &__image {
-    padding-top: 20px;
-    padding-bottom: 28px;
   }
 
   &__content {

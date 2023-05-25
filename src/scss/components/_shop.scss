@@ -2,6 +2,10 @@
   padding-top: 80px;
   background-color: var(--wildsand-color);
 
+  @include mobile {
+    padding-top: 50px;
+  }
+
   &__list {
     grid-template-rows: repeat(2, 350px);
 
@@ -63,6 +67,7 @@
     }
 
     @include mobile {
+      grid-column: 6 span;
       padding: 19px 10px 30px;
     }
   }

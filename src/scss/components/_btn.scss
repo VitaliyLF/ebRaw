@@ -24,6 +24,37 @@
     text-transform: initial;
   }
 
+  &--shop {
+    &.added {
+      color: var(--alizarin-crimson-color);
+      animation: btn-add 0.3s ease-in-out;
+    }
+  }
+
+  &--favorites {
+    &.added-favorites {
+      animation: btn-add 0.3s ease-in-out;
+
+      svg {
+        fill: var(--alizarin-crimson-color) !important;
+      }
+    }
+  }
+
+  @keyframes btn-add {
+    from {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
   &:focus {
     outline: 2px solid var(--accent-color);
     outline-offset: 4px;

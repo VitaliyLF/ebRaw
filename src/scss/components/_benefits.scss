@@ -21,6 +21,10 @@
         }
       }
     }
+
+    @include tablet {
+      grid-column: 6 span;
+    }
   }
 
   &__icon {
