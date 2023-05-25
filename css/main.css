@@ -496,7 +496,7 @@ a {
   background-color: var(--dove-gray-color);
 }
 
-.slider-nav__btn {
+.slider-nav--btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,7 +515,7 @@ a {
   background-color: var(--light-color);
   color: var(--accent-color);
 }
-.slider-nav__btn svg {
+.slider-nav--btn svg {
   display: block;
   width: 8px;
   height: 12px;
@@ -524,40 +524,23 @@ a {
   color: inherit;
   fill: currentColor;
 }
-.slider-nav__btn:focus {
+.slider-nav--btn:focus {
   outline: 2px solid var(--accent-color);
   outline-offset: 4px;
 }
 @media (any-hover: hover) {
-  .slider-nav__btn:hover {
+  .slider-nav--btn:hover {
     background-color: var(--accent-color);
   }
-  .slider-nav__btn:hover svg {
+  .slider-nav--btn:hover svg {
     fill: var(--light-color);
   }
 }
-.slider-nav__btn:active {
+.slider-nav--btn:active {
   background-color: var(--dove-gray-color);
 }
-.slider-nav__btn--light {
-  border: 2px solid var(--light-color);
-  background-color: transparent;
-  color: var(--light-color);
-}
-.slider-nav__btn--light svg {
-  color: inherit;
-  fill: currentColor;
-}
-@media (any-hover: hover) {
-  .slider-nav__btn--light:hover {
-    background-color: var(--light-color);
-  }
-  .slider-nav__btn--light:hover svg {
-    fill: var(--dove-gray-color);
-  }
-}
 
-.slider-nav__btn.swiper-button-disabled {
+.slider-nav--btn.swiper-button-disabled {
   opacity: 0.4;
   pointer-events: none;
 }
@@ -913,15 +896,15 @@ a {
   color: var(--black-color);
   text-transform: uppercase;
 }
-.hero__title--text {
-  display: block;
-  font-weight: 700;
-}
 @media (max-width: 576px) {
   .hero__title {
     font-size: 38px;
     line-height: 120%;
   }
+}
+.hero__title-text {
+  display: block;
+  font-weight: 700;
 }
 .hero__image {
   -webkit-transform: translateX(70px);
@@ -1977,6 +1960,26 @@ a {
   .reviews__next {
     display: none;
   }
+}
+.reviews__btn {
+  border: 2px solid var(--light-color);
+  background-color: transparent;
+  color: var(--light-color);
+}
+.reviews__btn svg {
+  color: inherit;
+  fill: currentColor;
+}
+@media (any-hover: hover) {
+  .reviews__btn:hover {
+    background-color: var(--light-color);
+  }
+  .reviews__btn:hover svg {
+    fill: var(--dove-gray-color);
+  }
+}
+.reviews__btn:active {
+  background-color: var(--alizarin-crimson-color);
 }
 .reviews__title {
   margin-bottom: 17px;
