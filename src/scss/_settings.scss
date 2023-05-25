@@ -88,6 +88,10 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-fluid-offset);
   max-width: var(--container-fluid-width);
+
+  @include mobile {
+    padding: 0 15px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -114,12 +118,20 @@ a {
 
 .section-offset {
   padding: 100px 0;
+
+  @include mobile {
+    padding: 50px 0;
+  }
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
+
+  @include mobile {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .title {
@@ -130,6 +142,11 @@ a {
   line-height: 52px;
   text-align: center;
   color: var(--black-color);
+
+  @include mobile {
+    font-size: 25px;
+    line-height: 42px;
+  }
 }
 
 .descr {
@@ -140,4 +157,17 @@ a {
   line-height: 28px;
   text-align: center;
   color: var(--black-color);
+}
+
+.burger {
+  @include burger;
+
+  --burger-height: 20px;
+
+  display: none;
+  color: var(--accent-color);
+
+  @include small-tablet {
+    display: block;
+  }
 }

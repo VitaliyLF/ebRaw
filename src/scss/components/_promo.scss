@@ -8,6 +8,10 @@
   box-shadow: 0px 8px 47px rgba(0, 0, 0, 0.2);
   z-index: 100;
 
+  @include small-tablet {
+    display: none;
+  }
+
   &__content {
     max-width: 130px;
   }

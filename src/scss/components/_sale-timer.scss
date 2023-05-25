@@ -9,6 +9,19 @@
   flex-direction: column;
   align-items: center;
 
+  @include minidesk {
+    max-width: 100%;
+  }
+
+  @include tablet {
+    padding: 60px 35px;
+    min-height: auto;
+  }
+
+  @include mobile {
+    padding: 30px 20px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 32px;
@@ -27,10 +40,20 @@
 
     flex-wrap: wrap;
     margin-bottom: 43px;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__item {
     @include mr(15px);
+
+    @include mobile {
+      margin: 20px;
+
+      @include mr(20px);
+    }
   }
 
   &__value {
