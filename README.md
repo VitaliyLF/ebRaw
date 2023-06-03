@@ -7,4 +7,5 @@ Fashionable Clothing Store for Women [(Landing page)](https://vetosy.github.io/e
 - SVG изображения и оптимизация
 - Pixel Perfect
 - Зеленая зона Google Lighthouse
+- Зеленая зона The W3C Markup Validation
 - Модульность
