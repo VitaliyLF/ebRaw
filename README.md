@@ -6,6 +6,7 @@
 - Gulp сборка
 - БЭМ
 - JS
+- Figma
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,scss,figma,gulp,)](https://skillicons.dev)
 
