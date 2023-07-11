@@ -3,12 +3,12 @@
 ## 🛠 Что я использовал:
 - HTML5
 - SCSS препроцессор
-- Gulp сборка
-- БЭМ
 - JS
+- БЭМ
+- Gulp сборка
 - Figma
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,scss,figma,gulp,)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,js,scss,gulp,figma)](https://skillicons.dev)
 
 ## :clipboard: Что я реализовал:
 - Pixel Perfect
