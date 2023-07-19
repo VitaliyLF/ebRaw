@@ -254,12 +254,11 @@
     color: var(--black-color);
   }
 
-  &__link {
-    @include mr(6px);
+  &__accept {
+    display: flex;
+  }
 
-    &:focus {
-      outline: 2px solid var(--accent-color);
-      outline-offset: 4px;
-    }
+  &__item {
+    @include mr(20px);
   }
 }
