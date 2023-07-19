@@ -73,12 +73,6 @@
   }
 
   &__image {
-    margin-bottom: 10px;
-
-    @include minidesk {
-      margin-bottom: 0;
-    }
-
     @include mobile {
       display: none;
     }
