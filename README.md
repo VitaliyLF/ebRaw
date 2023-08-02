@@ -1,5 +1,7 @@
 # Fashionable Clothing Store for Women [(Ссылка на проект)](https://vetosy.github.io/ebRaw)
 
+<a href="https://vetosy.github.io/ebRaw/"><img src="https://i.ibb.co/7vmhDzd/portfolio-2-2x.jpg" alt="portfolio-2-2x" border="0"></a>
+
 ## 🛠 Что я использовал:
 - HTML5
 - SCSS препроцессор
